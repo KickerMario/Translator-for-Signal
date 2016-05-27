@@ -16,11 +16,6 @@ namespace Compiler
             vars = new List<string>();
         }
 
-        ~Generator()
-        {
-            fileToWrite.Close();
-        }
-
         public void Generate(TreeNode tree, int labelsCount = 1)
         {
             string rule = tree.Text;
